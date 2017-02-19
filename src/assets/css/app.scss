@@ -1,8 +1,29 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: green;
-	font-family: "Cambria", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	background-color: red;
+	font-family: "Georgia", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}body {
+  background: linear-gradient( 
+    45deg,
+    violet,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+
+  background-size: 1000%;
+
+  animation: move_bg 500s linear 0s infinite;
+}
+
+@keyframes move_bg {
+  from {background-position: 0}
+  to {background-position: 1000%}
 }
 
 .nav {
